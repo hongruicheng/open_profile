@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>洪妍灵个人简历 | AI Agent全栈工程师</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%231B4F8B'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>AI</text></svg>"
+    />
+    <link
+      rel="stylesheet"
+      href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap"
+    />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --bg-soft: #f6f8fb;
+        --ink: #1a2332;
+        --ink-2: #46566c;
+        --ink-3: #8494a8;
+        --line: #e3e9f0;
+        --accent: #1b4f8b;
+        --accent-soft: #e8f0fa;
+        --accent-ink: #163d6b;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        font-family:
+          "Noto Sans SC",
+          -apple-system,
+          BlinkMacSystemFont,
+          "PingFang SC",
+          "Microsoft YaHei",
+          sans-serif;
+        color: var(--ink);
+        background: var(--bg-soft);
+        line-height: 1.65;
+        font-size: 15px;
+      }
+      .toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
+      }
+      .toolbar-inner {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 12px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .toolbar-brand {
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--ink-2);
+      }
+      .btn-print {
+        appearance: none;
+        border: 1px solid var(--line);
+        background: #fff;
+        color: var(--ink);
+        font-size: 13px;
+        padding: 7px 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.15s ease;
+        font-family: inherit;
+      }
+      .btn-print:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+      .page {
+        max-width: 880px;
+        margin: 24px auto;
+        padding: 0 24px 48px;
+      }
+      .sheet {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 48px 56px;
+      }
+      .header {
+        padding-bottom: 28px;
+        border-bottom: 1px solid var(--line);
+      }
+      .name-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .name {
+        font-size: 34px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1.1;
+      }
+      .title-line {
+        margin-top: 8px;
+        font-size: 16px;
+        color: var(--accent);
+        font-weight: 500;
+      }
+      .title-line .sep {
+        color: var(--ink-3);
+        margin: 0 8px;
+      }
+      .contact {
+        font-size: 13px;
+        color: var(--ink-2);
+        text-align: right;
+        line-height: 1.9;
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        justify-content: flex-end;
+      }
+      .contact-item svg {
+        width: 13px;
+        height: 13px;
+        flex-shrink: 0;
+        stroke: var(--ink-3);
+      }
+      .summary {
+        margin-top: 24px;
+        padding: 18px 20px;
+        background: var(--bg-soft);
+        border-left: 3px solid var(--accent);
+        border-radius: 0 6px 6px 0;
+      }
+      .summary p {
+        font-size: 14px;
+        color: var(--ink-2);
+        line-height: 1.8;
+      }
+      .experience-summary {
+        margin-top: 16px;
+        padding: 14px 18px;
+        background: #f0f5fb;
+        border-radius: 6px;
+        font-size: 14px;
+        color: var(--ink-2);
+        line-height: 1.7;
+      }
+      section {
+        margin-top: 32px;
+      }
+      .sec-title {
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: var(--accent);
+        text-transform: uppercase;
+        padding-bottom: 8px;
+        border-bottom: 2px solid var(--ink);
+        margin-bottom: 18px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .sec-title .num {
+        font-size: 12px;
+        color: var(--ink-3);
+        font-weight: 400;
+        letter-spacing: 0;
+      }
+      .skill-group {
+        margin-bottom: 14px;
+      }
+      .skill-group:last-child {
+        margin-bottom: 0;
+      }
+      .skill-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .skill-label::before {
+        content: "";
+        width: 3px;
+        height: 12px;
+        background: var(--accent);
+        border-radius: 2px;
+      }
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      .tag {
+        font-size: 12.5px;
+        padding: 3px 10px;
+        border-radius: 4px;
+        background: var(--accent-soft);
+        color: var(--accent-ink);
+        border: 1px solid #d6e4f5;
+      }
+      .tag.alt {
+        background: #fff;
+        color: var(--ink-2);
+        border-color: var(--line);
+      }
+      .project-intro-block {
+        margin-top: 10px;
+        padding: 10px 12px;
+        background: #f7f9fc;
+        border-left: 2px solid #7399c6;
+        border-radius: 0 4px 4px 0;
+        font-size: 13.5px;
+        color: #2c3e50;
+        line-height: 1.7;
+      }
+      .project-intro-title {
+        font-weight: 600;
+        font-size: 13px;
+        color: #1f4e80;
+        margin-bottom: 4px;
+      }
+      .project-sub-title {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--accent-ink);
+        margin-top: 12px;
+        margin-bottom: 6px;
+      }
+      .project {
+        margin-bottom: 22px;
+        padding-bottom: 22px;
+        border-bottom: 1px dashed var(--line);
+      }
+      .project:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+      .project-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .project-name {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--ink);
+      }
+      .project-name .role {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--accent);
+        background: var(--accent-soft);
+        padding: 2px 8px;
+        border-radius: 3px;
+        margin-left: 8px;
+        vertical-align: 2px;
+      }
+      .project-date {
+        font-size: 12.5px;
+        color: var(--ink-3);
+        white-space: nowrap;
+      }
+      .project-tech {
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+      .project-tech .tag {
+        font-size: 11.5px;
+        padding: 2px 8px;
+        background: #f4f6f9;
+        color: var(--ink-2);
+        border-color: #e8edf3;
+      }
+      .project ul {
+        margin-top: 6px;
+        padding-left: 20px;
+      }
+      .project ul li {
+        font-size: 14px;
+        color: var(--ink-2);
+        margin-bottom: 6px;
+        line-height: 1.75;
+      }
+      .project ul li::marker {
+        color: var(--accent);
+      }
+      .job {
+        display: grid;
+        grid-template-columns: 110px 1fr;
+        gap: 16px;
+        padding-bottom: 18px;
+        position: relative;
+      }
+      .job::before {
+        content: "";
+        position: absolute;
+        left: 110px;
+        top: 22px;
+        bottom: -2px;
+        width: 1px;
+        background: var(--line);
+      }
+      .job-date {
+        font-size: 12.5px;
+        color: var(--ink-3);
+        padding-top: 3px;
+      }
+      .job-body {
+        position: relative;
+        padding-left: 18px;
+      }
+      .job-body::before {
+        content: "";
+        position: absolute;
+        left: -3px;
+        top: 8px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--accent);
+        border: 2px solid #fff;
+        box-shadow: 0 0 0 1px var(--accent);
+      }
+      .job-name {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--ink);
+      }
+      .job-name .position {
+        color: var(--accent);
+        font-weight: 500;
+      }
+      .job ul {
+        margin-top: 6px;
+        padding-left: 20px;
+      }
+      .job ul li {
+        font-size: 13.5px;
+        color: var(--ink-2);
+        margin-bottom: 4px;
+      }
+      .job ul li::marker {
+        color: var(--accent);
+      }
+      .edu {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 8px;
+      }
+      .edu:first-child {
+        margin-top: 0px;
+      }
+      .edu-school {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .edu-school .major {
+        font-weight: 400;
+        color: var(--ink-2);
+        margin-left: 8px;
+        font-size: 14px;
+      }
+      .edu-date {
+        font-size: 12.5px;
+        color: var(--ink-3);
+      }
+      .award-list,
+      .cert-list {
+        margin-top: 10px;
+        padding-left: 20px;
+        font-size: 13.5px;
+        color: var(--ink-2);
+      }
+      .award-list li,
+      .cert-list li {
+        margin-bottom: 4px;
+      }
+      .footer {
+        margin-top: 40px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+        text-align: center;
+        font-size: 12px;
+        color: var(--ink-3);
+      }
+      @media (max-width: 640px) {
+        .page {
+          margin: 0;
+          padding: 0 12px 32px;
+        }
+        .sheet {
+          padding: 28px 20px;
+          border-radius: 0;
+          border: none;
+        }
+        .name {
+          font-size: 26px;
+        }
+        .contact {
+          text-align: left;
+        }
+        .contact-item {
+          justify-content: flex-start;
+        }
+        .job {
+          grid-template-columns: 1fr;
+          gap: 4px;
+        }
+        .job::before {
+          display: none;
+        }
+        .job-body {
+          padding-left: 0;
+        }
+        .job-body::before {
+          display: none;
+        }
+      }
+      @media print {
+        body {
+          background: #fff;
+          font-size: 12px;
+        }
+        .toolbar {
+          display: none;
+        }
+        .page {
+          margin: 0;
+          padding: 0;
+          max-width: 100%;
+        }
+        .sheet {
+          border: none;
+          border-radius: 0;
+          padding: 0;
+        }
+        .project {
+          break-inside: avoid;
+        }
+        section {
+          break-inside: avoid-page;
+        }
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="toolbar-brand">个人简历 · 在线版</div>
+        <button class="btn-print" onclick="window.print()">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="6 9 6 2 18 2 18 9" />
+            <path
+              d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
+            />
+            <rect x="6" y="14" width="12" height="8" />
+          </svg>
+          导出 PDF
+        </button>
+      </div>
+    </div>
+    <div class="page">
+      <div class="sheet" id="resume-wrap"></div>
+    </div>
+    <script src="./resume_data.js"></script>
+    <script>
+      function renderResume(data) {
+        const wrap = document.getElementById("resume-wrap");
+        let html = "";
+        html += `
+  <header class="header">
+    <div class="name-row">
+      <div>
+        <h1 class="name">${data.name}</h1>
+        <div class="title-line" style="display:flex;flex-direction:column;gap:4px;">
+          <div>${data.title}</div>
+          <div>${data.subTitle}</div>
+        </div>
+        
+      </div>
+      <div class="contact" style="text-align:left;">
+        <div class="contact-item" style="justify-content:flex-start;">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>${data.phone}</span>
+        </div>
+        <div class="contact-item" style="justify-content:flex-start;">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>${data.email}</span>
+        </div>
+        <div class="contact-item" style="justify-content:flex-start;">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <span>${data.gitee}</span>
+        </div>
+        <div class="contact-item" style="justify-content:flex-start;">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>${data.location}</span>
+        </div>
+      </div>
+    </div>
+    <div class="summary">
+      <p>${data.summary}</p>
+    </div>
+    <div class="experience-summary">
+      <strong>行业积累总结：</strong>${data.expSummary}
+    </div>
+  </header>
+`;
+        html += `<section><h2 class="sec-title">技术栈 <span class="num">/ Skills</span></h2>`;
+        for (const sg of data.skillGroups) {
+          html += `
+    <div class="skill-group">
+      <div class="skill-label">${sg.label}</div>
+      <div class="tags">
+        ${sg.tags.map((t) => `<span class="tag">${t}</span>`).join("")}
+      </div>
+    </div>
+    `;
+        }
+        html += `</section>`;
+
+        // 【改动：工作经历提前，放在技术栈之后，项目之前】
+        html += `<section><h2 class="sec-title">工作经历 <span class="num">/ Experience</span></h2>`;
+        for (const job of data.jobs) {
+          html += `
+    <div class="job">
+      <div class="job-date">${job.date}</div>
+      <div class="job-body">
+        <div class="job-name">${job.company} <span class="position">· ${job.position}</span></div>
+        <ul>
+          ${job.points.map((p) => `<li>${p}</li>`).join("")}
+        </ul>
+      </div>
+    </div>
+    `;
+        }
+        html += `</section>`;
+
+        // ==========【项目经历放到工作经历后面】==========
+        html += `<section><h2 class="sec-title">项目经历 <span class="num">/ Projects</span></h2>`;
+        for (const proj of data.projects) {
+          html += `
+    <div class="project">
+      <div class="project-head">
+        <div class="project-name">${proj.name} <span class="role">${proj.role}</span></div>
+        <div class="project-date">${proj.date}</div>
+      </div>
+      <div class="project-tech">
+        ${proj.tech.map((t) => `<span class="tag">${t}</span>`).join("")}
+      </div>
+`;
+          if (proj.projectIntro && proj.projectIntro.trim() !== "") {
+            html += `<div class="project-intro-block" style="overflow-wrap: anywhere; word-break: break-word; min-width: 0;">
+    <div class="project-intro-title">项目成果简介</div>${proj.projectIntro}
+  </div>`;
+          }
+          if (
+            proj.aiPoints &&
+            Array.isArray(proj.aiPoints) &&
+            proj.aiPoints.length > 0
+          ) {
+            html += `<div class="project-sub-title">【AI端 · 大模型智能体】</div><ul>${proj.aiPoints.map((p) => `<li>${p}</li>`).join("")}</ul>`;
+          }
+          if (
+            proj.backendPoints &&
+            Array.isArray(proj.backendPoints) &&
+            proj.backendPoints.length > 0
+          ) {
+            html += `<div class="project-sub-title">【后端 · 工程化与服务】</div><ul>${proj.backendPoints.map((p) => `<li>${p}</li>`).join("")}</ul>`;
+          }
+          if (
+            proj.frontendPoints &&
+            Array.isArray(proj.frontendPoints) &&
+            proj.frontendPoints.length > 0
+          ) {
+            html += `<div class="project-sub-title">【前端 · 可视化与管理后台】</div><ul>${proj.frontendPoints.map((p) => `<li>${p}</li>`).join("")}</ul>`;
+          }
+          html += `</div>`;
+        }
+        html += `</section>`;
+
+        html += `<section><h2 class="sec-title">教育背景 <span class="num">/ Education</span></h2>`;
+        for (const edu of data.education) {
+          html += `
+    <div class="edu">
+      <div class="edu-school">${edu.school} <span class="major">${edu.major}</span></div>
+      <div class="edu-date">${edu.date}</div>
+    </div>
+    `;
+        }
+        html += `</section>`;
+        html += `
+  <section>
+    <h2 class="sec-title">技能证书 <span class="num">/ Certificates</span></h2>
+    <ul class="cert-list">
+      ${data.certificates.map((c) => `<li>${c}</li>`).join("")}
+    </ul>
+  </section>
+  `;
+        html += `
+  <section>
+    <h2 class="sec-title">荣誉奖项 <span class="num">/ Awards</span></h2>
+    <ul class="award-list">
+      ${data.awards.map((a) => `<li>${a}</li>`).join("")}
+    </ul>
+  </section>
+  `;
+        html += `<div class="footer">${data.footerText}</div>`;
+        wrap.innerHTML = html;
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        if (typeof resumeData !== "undefined") {
+          renderResume(resumeData);
+        } else {
+          alert("找不到 resume‑data.js，请确认两个文件放在同一个文件夹！");
+        }
+      });
+    </script>
+  </body>
+</html>
