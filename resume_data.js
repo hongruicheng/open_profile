@@ -22,7 +22,7 @@ const resumeData = {
   experience: `<strong>个人工程实践经验：</strong>
   <ul style="margin:8px 0 0 0; padding-left:24px; list-style-type:disc; font-size:14px; line-height:1.8; font-family:inherit; color:#46566c;">
   <li>2026.07 部门裁撤离职后，重构芯禾巡检机器人多智能体平台，脱敏开源：<a href="https://gitee.com/hongruichen/xinhe-project-made-open-source-1" target="_blank">https://gitee.com/hongruichen/xinhe-project-made-open-source-1</a></li>
-  <li>2026.08 独立开发多模态 HealthAgent 健康中台，实现 LangGraph 多智能体编排、混合 RAG、语音交互、RBAC 权限与飞书消息推送，完成可演示系统。</li>
+  <li>2026.08 独立开发多模态 HealthAgent 健康中台，实现 LangGraph 多智能体编排、混合 RAG、语音交互、RBAC 权限与飞书消息推送等功能的企业级应用。</li>
   <li>2026.09 自研 A2A 多智能体协作平台，实现路由、流水线、Map-Reduce 并行、Agent 协商编排能力，落地工程化多智能体平台。</li>
   <li>累计完成 3 套 AI Agent 产品研发，Gitee 可查阅源码与演示。</li></ul>`,
 
