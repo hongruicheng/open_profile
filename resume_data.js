@@ -16,7 +16,8 @@ const resumeData = {
     `<ul style="margin:8px 0 0 0; padding-left:24px; list-style-type:disc; font-size:14px; line-height:1.8; font-family:inherit; color:#46566c;">
 <li>拥有 GIS 与 AI 两大领域沉淀，2 个商业项目独立全栈开发，可完整负责需求梳理、数据库设计、接口、前端、部署验收全流程；积累大量 OpenLayers/Cesium 二三维 GIS 项目，技术主线由二维 GIS 向三维数字孪生演进。</li>
 <li>早年部分短期任职存在客观变故，含企业单方面延长转正、2021 年疫情业务收缩裁员；裁员后 3 个月备考上岸全日制硕士。2022 年考研录取后的 4 个月工作，独立研发哨兵气象遥感自动化处理平台，落地并投入公司内部使用。</li>
-<li>研究生阶段深耕机器人深度强化学习路径规划与多智能体算法；毕业后主攻大模型应用开发，落地芯禾多智能体 Agent 系统后，因公司业务收缩离职。持续聚焦 GIS 空间业务、机器人/无人机调度与大模型智能体融合开发，完成可演示多智能体巡检系统、多模态多智能体健康管理中台、A2A 协议多智能体代码生成审查协作助手平台共 3 套 AI Agent 产品，Gitee 可查阅源码与演示。</li>
+<li>研究生阶段深耕机器人深度强化学习路径规划与多智能体算法；毕业后主攻大模型应用开发，落地芯禾多智能体 Agent 系统后，因公司业务收缩离职。</li>
+<li>持续聚焦 GIS 空间业务、机器人/无人机调度与大模型智能体融合开发，完成可演示多智能体巡检系统、多模态多智能体健康管理中台、A2A 协议多智能体代码生成审查协作助手平台共 3 套 AI Agent 产品，Gitee 可查阅源码与演示。</li>
 </ul>`,
   experience: `<strong>个人工程实践经验：</strong>
   <ul style="margin:8px 0 0 0; padding-left:24px; list-style-type:disc; font-size:14px; line-height:1.8; font-family:inherit; color:#46566c;">
