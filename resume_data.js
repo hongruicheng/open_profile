@@ -12,83 +12,91 @@ const resumeData = {
   summary: `<strong>4 年 WebGIS 全栈开发经验，2022–2025 年全职攻读硕士研究生，研究方向为机器人深度强化学习路径规划</strong>；独立完成芯禾巡检机器人多智能体平台项目，基于 LangGraph 实现多 Agent 编排，结合 RAG 知识库、Cesium 三维数字孪生与巡检任务规划，形成可演示的智能巡检系统、同步完成 2 套AI Agent演示项目；具备二三维GIS商业项目完整交付经验，2个项目实现前后端独立全栈开发；掌握LangGraph多智能体编排、混合RAG检索、多模态语音交互、RBAC行级权限、Docker容器化与双CI/CD工程体系；具备从需求、架构设计、核心逻辑开发、测试治理到上线部署全链路能力。企业项目量化成果：问答准确率提升50%，任务下发效率提升20%，接口响应延迟缩短35%，线上排障效率提升60%+，个人作品集：<a href="https://gitee.com/hongruichen" target="_blank">https://gitee.com/hongruichen</a>`,
 
   expSummary:
-    "拥有 GIS 与 AI 两大领域沉淀，2 个商业项目完成前后端独立全栈开发，可独立承担需求梳理、数据库设计、接口开发、前端实现、部署验收完整流程；早期积累大量 OpenLayers / Cesium 二三维 GIS 商业项目，职业主线由二维 GIS 向三维数字孪生演进。早年部分短期任职存在客观变故，含企业单方面延长转正、2021 年疫情业务收缩裁员；裁员后 3 个月备考上岸全日制硕士。2022 年考研录取后的 4 个月工作，独立研发哨兵气象遥感自动化处理平台，落地并投入公司内部使用。研究生阶段深耕机器人深度强化学习与多智能体算法；毕业后期主攻大模型应用开发，落地多套 Agent 系统，聚焦 GIS 空间业务、机器人 / 无人机调度与大模型智能体融合开发。",
+    // "拥有 GIS 与 AI 两大领域沉淀，2 个商业项目完成前后端独立全栈开发，可独立承担需求梳理、数据库设计、接口开发、前端实现、部署验收完整流程；早期积累大量 OpenLayers / Cesium 二三维 GIS 商业项目，职业主线由二维 GIS 向三维数字孪生演进。早年部分短期任职存在客观变故，含企业单方面延长转正、2021 年疫情业务收缩裁员；裁员后 3 个月备考上岸全日制硕士。2022 年考研录取后的 4 个月工作，独立研发哨兵气象遥感自动化处理平台，落地并投入公司内部使用。研究生阶段深耕机器人深度强化学习与多智能体算法；毕业后主攻大模型应用开发，落地芯禾多智能体 Agent 系统后，因公司业务收缩离职，我持续聚焦yu GIS 空间业务、机器人 / 无人机调度与大模型智能体融合开发，形成可演示的多智能体巡检系统、健康管理中台与 A2A 协作平台 3 套 AI Agent 产品研发，Gitee 可查阅源码与演示。",
+    `<ul style="margin:8px 0 0 0; padding-left:24px; list-style-type:disc; font-size:14px; line-height:1.8; font-family:inherit; color:#46566c;">
+<li>拥有 GIS 与 AI 两大领域沉淀，2 个商业项目独立全栈开发，可完整负责需求梳理、数据库设计、接口、前端、部署验收全流程；积累大量 OpenLayers/Cesium 二三维 GIS 项目，技术主线由二维 GIS 向三维数字孪生演进。</li>
+<li>早年部分短期任职存在客观变故，含企业单方面延长转正、2021 年疫情业务收缩裁员；裁员后 3 个月备考上岸全日制硕士。2022 年考研录取后的 4 个月工作，独立研发哨兵气象遥感自动化处理平台，落地并投入公司内部使用。</li>
+<li>研究生阶段深耕机器人深度强化学习路径规划与多智能体算法；毕业后主攻大模型应用开发，落地芯禾多智能体 Agent 系统后，因公司业务收缩离职。持续聚焦 GIS 空间业务、机器人/无人机调度与大模型智能体融合开发，完成可演示多智能体巡检系统、多模态多智能体健康管理中台、A2A 协议多智能体代码生成审查协作助手平台共 3 套 AI Agent 产品，Gitee 可查阅源码与演示。</li>
+</ul>`,
+  experience: `<strong>个人工程实践经验：</strong>
+  <ul style="margin:8px 0 0 0; padding-left:24px; list-style-type:disc; font-size:14px; line-height:1.8; font-family:inherit; color:#46566c;">
+  <li>2026.07 部门裁撤离职后，重构芯禾巡检机器人多智能体平台，脱敏开源：<a href="https://gitee.com/hongruichen/xinhe-project-made-open-source-1" target="_blank">https://gitee.com/hongruichen/xinhe-project-made-open-source-1</a></li>
+  <li>2026.08 独立开发多模态 HealthAgent 健康中台，实现 LangGraph 多智能体编排、混合 RAG、语音交互、RBAC 权限与飞书消息推送，完成可演示系统。</li>
+  <li>2026.09 自研 A2A 多智能体协作平台，实现路由、流水线、Map-Reduce 并行、Agent 协商编排能力，落地工程化多智能体平台。</li>
+  <li>累计完成 3 套 AI Agent 产品研发，Gitee 可查阅源码与演示。</li></ul>`,
 
-  experience: `<strong>个人工程实践经验：</strong><ul style="margin:8px 0 0 0; padding-left:24px; list-style-type:disc; font-size:14px; line-height:1.8; font-family:inherit; color:#46566c;"><li>2026.07 部门裁撤离职后，重构芯禾巡检机器人多智能体平台，脱敏开源：<a href="https://gitee.com/hongruichen/xinhe-project-made-open-source-1" target="_blank">https://gitee.com/hongruichen/xinhe-project-made-open-source-1</a></li><li>2026.08 独立开发 HealthAgent 多模态健康中台，实现 LangGraph 多智能体编排、混合 RAG、语音交互、RBAC 权限与飞书消息推送，完成可演示系统。</li><li>2026.09 自研 A2A 多智能体协作平台，实现路由、流水线、Map-Reduce 并行、Agent 协商编排能力，落地工程化多智能体平台。</li><li>累计完成 3 套 AI Agent 产品研发，Gitee 可查阅源码与演示。</li></ul>
-`,
-
-  skillGroups: [
-    {
-      label: "AI Agent & 大模型应用",
-      tags: [
-        "Python",
-        "LangGraph",
-        "LangChain",
-        "A2A协议",
-        "MCP协议",
-        "HITL人机协同",
-        "Function‑Calling",
-        "Qwen系列",
-      ],
-    },
-    {
-      label: "RAG & 知识库评测",
-      tags: [
-        "BM25",
-        "BGE重排",
-        "RRF融合",
-        "ChromaDB",
-        "MinerU文档解析",
-        "Ragas评测",
-        "Query重写",
-      ],
-    },
-    {
-      label: "后端工程 & 多模态",
-      tags: [
-        "FastAPI/Django",
-        "SSE流式",
-        "WebSocket",
-        "MQTT",
-        "STT/TTS语音",
-        "APScheduler",
-        "Pydantic v2",
-      ],
-    },
-    {
-      label: "数据库、缓存与权限",
-      tags: [
-        "PostgreSQL",
-        "Redis",
-        "PostGIS",
-        "RBAC行级权限",
-        "JWT/apiKey双鉴权",
-      ],
-    },
-    {
-      label: "GIS & 前端 & 算法",
-      tags: [
-        "Vue3",
-        "Cesium",
-        "OpenLayers",
-        "3D‑Tiles",
-        "ECharts",
-        "Electron",
-        "强化学习(PPO/SAC/DQN)",
-      ],
-    },
-    {
-      label: "工程运维 & 可观测",
-      tags: [
-        "Docker / Compose",
-        "pytest单元测试",
-        "Gitee‑Go/GitHub Actions",
-        "LangSmith",
-        "tenacity降级重试",
-        "Git",
-      ],
-    },
-  ],
+  // skillGroups: [
+  //   {
+  //     label: "AI Agent & 大模型应用",
+  //     tags: [
+  //       "Python",
+  //       "LangGraph",
+  //       "LangChain",
+  //       "A2A协议",
+  //       "MCP协议",
+  //       "HITL人机协同",
+  //       "Function‑Calling",
+  //       "Qwen系列",
+  //     ],
+  //   },
+  //   {
+  //     label: "RAG & 知识库评测",
+  //     tags: [
+  //       "BM25",
+  //       "BGE重排",
+  //       "RRF融合",
+  //       "ChromaDB",
+  //       "MinerU文档解析",
+  //       "Ragas评测",
+  //       "Query重写",
+  //     ],
+  //   },
+  //   {
+  //     label: "后端工程 & 多模态",
+  //     tags: [
+  //       "FastAPI/Django",
+  //       "SSE流式",
+  //       "WebSocket",
+  //       "MQTT",
+  //       "STT/TTS语音",
+  //       "APScheduler",
+  //       "Pydantic v2",
+  //     ],
+  //   },
+  //   {
+  //     label: "数据库、缓存与权限",
+  //     tags: [
+  //       "PostgreSQL",
+  //       "Redis",
+  //       "PostGIS",
+  //       "RBAC行级权限",
+  //       "JWT/apiKey双鉴权",
+  //     ],
+  //   },
+  //   {
+  //     label: "GIS & 前端 & 算法",
+  //     tags: [
+  //       "Vue3",
+  //       "Cesium",
+  //       "OpenLayers",
+  //       "3D‑Tiles",
+  //       "ECharts",
+  //       "Electron",
+  //       "强化学习(PPO/SAC/DQN)",
+  //     ],
+  //   },
+  //   {
+  //     label: "工程运维 & 可观测",
+  //     tags: [
+  //       "Docker / Compose",
+  //       "pytest单元测试",
+  //       "Gitee‑Go/GitHub Actions",
+  //       "LangSmith",
+  //       "tenacity降级重试",
+  //       "Git",
+  //     ],
+  //   },
+  // ],
 
   projects: [
     {
@@ -255,7 +263,7 @@ const resumeData = {
       points: [
         "独立完成哨兵气象遥感数据自动化处理平台后端开发，搭建卫星影像筛选、批量下载与预处理任务调度系统。",
         "主导空间数据库相关业务后端接口开发，封装空间查询、模型元数据RESTful接口，开发Cesium三维场景前端交互页面，完成前后端联调，全栈交付业务模块,共计完成1个产品研发",
-        "2022.07 离职，应导师之邀提前入学做科研课题，全日制脱产攻读硕士研究生，2025.12 硕士毕业。",
+        "2022.07 离职，提前入学做科研课题，全日制脱产攻读硕士研究生，2025.12 硕士毕业。",
       ],
     },
     {
@@ -273,7 +281,7 @@ const resumeData = {
       company: "广东中科瑞泰科技有限公司",
       position: "WebGIS工程师",
       points: [
-        "无人机相关三维GIS产品开发，完成国土巡检、消防应急指挥平台的核心业务模块，在职期间内共计完成2个产品研发，因企业单方面延长转正与入职约定3月转正不符，经综合评估后选择离职，转向业务方向更匹配的岗位",
+        "无人机相关三维GIS产品开发，完成国土巡检、消防应急指挥平台的核心业务模块，在职期间内共计完成2个产品研发，因企业单方面延长转正与入职约定3个月转正期不符，经综合评估后选择离职，转向业务方向更匹配的岗位",
       ],
     },
     {

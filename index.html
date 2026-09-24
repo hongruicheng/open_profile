@@ -445,6 +445,7 @@
           display: none;
         }
       }
+
       /* @media print {
         body {
           background: #fff;
@@ -476,72 +477,111 @@
       } */
 
       @media print {
-  @page {
-    size: A4;
-    margin: 15mm;
-  }
-
-  html, body {
-    background: #fff;
-    font-size: 12px;
-    height: auto !important;
-    min-height: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    transform: none !important;
-  }
-
-  .toolbar {
-    display: none !important;
-  }
-
-  .page {
-    margin: 0 !important;
-    padding: 0 !important;
-    max-width: 100% !important;
-    height: auto !important;
-    min-height: auto !important;
-    transform: none !important;
-    position: static !important;
-    top: auto !important;
-  }
-
-  .sheet {
-    border: none !important;
-    border-radius: 0 !important;
-    padding: 0 !important;
-    height: auto !important;
-    min-height: auto !important;
-    position: static !important;
-    transform: none !important;
-  }
-
-  .project {
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-
-  section {
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-
-  /* 重点：所有区块不要前面自动分页 */
-  section, .project, .title-block {
-    page-break-before: avoid;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  /* 清除所有固定定位元素 */
-  [style*="position:fixed"], [style*="position: absolute"] {
-    position: static !important;
-  }
-}
-
+        @page {
+          size: A4;
+          margin: 15mm;
+        }
+        html,
+        body {
+          background: #fff;
+          font-size: 12px;
+          height: auto !important;
+          min-height: auto !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          transform: none !important;
+        }
+        .toolbar {
+          display: none !important;
+        }
+        .page {
+          margin: 0 !important;
+          padding: 0 !important;
+          max-width: 100% !important;
+          height: auto !important;
+          min-height: auto !important;
+          transform: none !important;
+          position: static !important;
+          top: auto !important;
+        }
+        .sheet {
+          border: none !important;
+          border-radius: 0 !important;
+          padding: 0 !important;
+          height: auto !important;
+          min-height: auto !important;
+          position: static !important;
+          transform: none !important;
+        }
+        .project {
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+        .header {
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+        section {
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+        section,
+        .project,
+        .title-block {
+          page-break-before: avoid;
+        }
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+        [style*="position:fixed"],
+        [style*="position: absolute"] {
+          position: static !important;
+        }
+        /* 删掉全局section的 page-break-before:avoid */
+        section {
+          break-inside: avoid;
+          page-break-inside: avoid;
+          /* 移除 page-break-before: avoid; */
+        }
+        /* 只给项目标题加：标题后面不能分页 */
+        .section-title,
+        strong:has(+ ul) {
+          page-break-after: avoid;
+        }
+        /* 项目经历强制从新的一页开始 */
+        /* .projects-section {
+          page-break-before: always;
+          break-before: page;
+        } */
+         body {
+          background: #fff;
+          font-size: 12px;
+        }
+        .toolbar {
+          display: none;
+        }
+        .page {
+          margin: 0;
+          padding: 0;
+          max-width: 100%;
+        }
+        .sheet {
+          border: none;
+          border-radius: 0;
+          padding: 0;
+        }
+        .project {
+          break-inside: avoid;
+        }
+        section {
+          break-inside: avoid-page;
+        }
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -613,23 +653,23 @@
     <div class="experience-summary">
       <strong>行业积累总结：</strong>${data.expSummary}
     </div>
-     <div class="summary">
-      <p>${data.experience}</p>
+     <div class="experience-summary">
+      <div>${data.experience}</div>
     </div>
   </header>
 `;
-        html += `<section><h2 class="sec-title">技术栈 <span class="num">/ Skills</span></h2>`;
-        for (const sg of data.skillGroups) {
-          html += `
-    <div class="skill-group">
-      <div class="skill-label">${sg.label}</div>
-      <div class="tags">
-        ${sg.tags.map((t) => `<span class="tag">${t}</span>`).join("")}
-      </div>
-    </div>
-    `;
-        }
-        html += `</section>`;
+        //     html += `<section><h2 class="sec-title">技术栈 <span class="num">/ Skills</span></h2>`;
+        //     for (const sg of data.skillGroups) {
+        //       html += `
+        // <div class="skill-group">
+        //   <div class="skill-label">${sg.label}</div>
+        //   <div class="tags">
+        //     ${sg.tags.map((t) => `<span class="tag">${t}</span>`).join("")}
+        //   </div>
+        // </div>
+        // `;
+        //     }
+        //     html += `</section>`;
 
         // 【改动：工作经历提前，放在技术栈之后，项目之前】
         html += `<section><h2 class="sec-title">工作经历 <span class="num">/ Experience</span></h2>`;
@@ -649,7 +689,7 @@
         html += `</section>`;
 
         // ==========【项目经历放到工作经历后面】==========
-        html += `<section><h2 class="sec-title">项目经历 <span class="num">/ Projects</span></h2>`;
+        html += `<section class="projects-section"><h2 class="sec-title">项目经历 <span class="num">/ Projects</span></h2>`;
         for (const proj of data.projects) {
           html += `
     <div class="project">
