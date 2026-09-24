@@ -445,7 +445,7 @@
           display: none;
         }
       }
-      @media print {
+      /* @media print {
         body {
           background: #fff;
           font-size: 12px;
@@ -473,7 +473,75 @@
           color: inherit;
           text-decoration: none;
         }
-      }
+      } */
+
+      @media print {
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+
+  html, body {
+    background: #fff;
+    font-size: 12px;
+    height: auto !important;
+    min-height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+  }
+
+  .toolbar {
+    display: none !important;
+  }
+
+  .page {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+    transform: none !important;
+    position: static !important;
+    top: auto !important;
+  }
+
+  .sheet {
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    min-height: auto !important;
+    position: static !important;
+    transform: none !important;
+  }
+
+  .project {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* 重点：所有区块不要前面自动分页 */
+  section, .project, .title-block {
+    page-break-before: avoid;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* 清除所有固定定位元素 */
+  [style*="position:fixed"], [style*="position: absolute"] {
+    position: static !important;
+  }
+}
+
     </style>
   </head>
   <body>
